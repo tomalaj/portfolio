@@ -1,0 +1,110 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	background:#353535;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:600px;
+	min-width:600px;
+}
+
+.przestrzen{
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.zegar{
+	position:relative;
+	height: 500px;
+	width: 500px;
+	border: 10px solid #fff;
+	border-radius: 50%;
+	background:#3c6e71;
+	box-shadow: 3px 2px 15px #3c6e71;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.zegar::before{
+	content:'';
+	position:absolute;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background:#fff;
+	border: 1px solid #fff;
+	box-shadow: 0px 0px 10px #fff;
+	z-index:20;
+}
+.zegar span{
+	position:absolute;
+	inset:20px;
+	text-align: center;
+	color: #fff;
+	transform: rotate(calc(30deg * var(--czas)));
+}
+
+.zegar span b{
+	font-size:2.5em;
+	opacity:0.65;
+}
+.wskazowka{
+	position:absolute;
+	height:400px;
+	width:400px;
+	border-radius:50%;
+	display:flex;
+	justify-content:center;
+	z-index:10;
+}
+.wskazowka i{
+	position: absolute;
+	width:10px;
+	height:50%;
+	background:var(--kolor);
+}
+.minuta{
+	height:350px;
+	width:350px;
+}
+.godzina{
+	height:250px;
+	width:250px;
+}
+/*--------------------------------------mobilne-----------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+.zegar{	
+	height: 350px;
+	width: 350px;
+}
+.zegar span{
+	inset:10px;
+}
+.zegar span b{
+	font-size:2em;
+	opacity:0.65;
+}
+.wskazowka{
+	height:250px;
+	width:250px;
+}
+.wskazowka i{
+	width:5px;
+}
+.minuta{
+	height:200px;
+	width:200px;
+
+}
+.godzina{
+	height:170px;
+	width:170px;
+}
+}

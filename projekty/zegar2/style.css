@@ -1,0 +1,163 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	background:#233d4d;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:600px;
+}
+.szklo1{
+	height:450px;
+	width:850px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden;
+	background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+	border-radius:20px;
+	backdrop-filter: blur(15px);
+	border: 1px solid rgba(255,255,255,0.18);
+	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.4);
+	z-index:5;
+}
+.szklo2{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items: center;
+	overflow:hidden;
+	height:350px;
+	width: 750px;
+	background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.06));
+	backdrop-filter: blur(15px);
+	border-radius: 20px;
+	border: 1px solid rgba(255,255,255,0.18);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+	z-index:6;
+	
+}
+.kulka{
+	position:absolute;
+	content:'';
+	height: 350px;
+	width: 350px;
+	border-radius:50%;
+	z-index:4;
+}
+.kulka:nth-child(1){
+	margin-left:-900px;
+	margin-top:-200px;
+	background:linear-gradient(#fe7f2d, #fe0000);
+}
+.kulka:nth-child(2){
+	background:linear-gradient(#fcca46, #fcc0ff);
+	margin-left:700px;
+	margin-top:300px;
+}
+
+.dni_tygodnia{
+	height:50px;
+	width:750px;
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	padding:20px;
+}
+.dni_tygodnia span{
+	font-size:20px;
+	font-family:Rockwell;
+	color:#f4f1de;
+	opacity: 0.5;
+}
+.godzina{
+	height:100px;
+	width:400px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.godzina b{
+	font-size:60px;
+	font-family:Impact;
+	padding-left:10px;
+	color:#f4f1de;
+}
+.data{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:80px;
+	width:750px;
+}
+.data b{
+	color:#f4f1de;
+	padding-left:30px;
+	font-family:Rockwell;
+	font-size:20px;
+}
+.data i{
+	color:#f4f1de;
+	font-size:30px;
+}
+
+
+/*-----------------------------mobilne------------------------------------*/
+@media screen and (max-width: 767px) {
+	.szklo1{
+	height:520px;
+	width:280px;
+	}
+	.szklo2{
+	height:480px;
+	width: 240px;
+	}
+	.kulka{
+	height: 150px;
+	width: 150px;
+}
+.kulka:nth-child(1){
+	margin-left:-200px;
+	margin-top:-280px;
+}
+.kulka:nth-child(2){
+	margin-left:180px;
+	margin-top:260px;
+}
+.dni_tygodnia{
+	height:200px;
+	width:230px;
+	padding:10px;
+	display:flex;
+	flex-direction:column;
+}
+
+.godzina{
+	height:100px;
+	width:400px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.godzina b{
+	font-size:40px;
+}
+.data{
+	height:60px;
+	width:200px;
+}
+.data b{
+	padding-left:10px;
+	font-size:20px;
+}
+
+}
+
+
+
+
+
+

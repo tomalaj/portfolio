@@ -1,0 +1,168 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	display:flex;
+	justify-content:center;
+	background-image: linear-gradient(65deg, #9c7744, #7f5539);
+}
+.cialko{
+	height:100vh;
+	width:100vw;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+}
+/*---------------środkowy panel--------------------*/
+.karta{
+	margin-left:30px;
+	position:relative;
+	height:180px;
+	width: 300px;
+	background-image: linear-gradient(220deg, #b08968, #ddb892);
+	border-radius:20px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	transition: 0.5s;
+	box-shadow: 10px 10px 30px #000;
+}
+.karta:hover {
+	height:400px;
+}
+.karta:hover .zdjecie{
+	height:200px;
+	width: 200px;
+	transition: 0.5s;
+}
+.karta:hover .info{
+	height:240px;
+	top:150px;
+	transition: 0.5s;
+}
+.karta:hover .info h3{
+	font-size:30px;
+	transition: 0.7s;
+}
+.zdjecie{
+	position:absolute;
+	top:-50px;
+	left:50%;
+	transform: translateX(-50%);
+	height:150px;
+	width:150px;
+	border-radius:20px;
+	box-shadow: 10px 10px 30px #000;
+}
+.zdjecie img{
+	position:absolute;
+	height:100%;
+	width:100%;
+	object-fit:cover;
+	border-radius: 20px;
+}
+.karta .info{
+	font-family: 'Anton', sans-serif;
+	display:flex;
+	justify-content:center;
+	align-items:center;	
+	position:absolute;
+	flex-wrap:wrap;
+	text-align:center;
+	top:120px;
+	height:50px;
+	overflow:hidden;
+}
+.karta .umiejetnosci{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	height:100px;
+	width:290px;
+}
+.karta .umiejetnosci div img{
+	height:70px;
+	width:auto;
+}
+.karta input[type=button]{
+	margin-top:10px;
+	background: linear-gradient(80deg, #e6ccbf, #ede0d4);
+	height:60px;
+	width:200px;
+	border-radius:20px;
+	border: none;
+	font-family:'Anton', sans-serif, 'Roboto Slab', serif;
+	font-size:18px;
+}
+.karta input[type=button]:focus{
+	background:#7f5539;
+}
+.karta input[type=button]:hover{
+	background:#b08968;
+	transition:1s;
+}
+
+/*---------------------panele boczne--------------------------*/
+
+.karta .projekty{
+	height:100px;
+	width:240px;
+	overflow:hidden;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+}
+
+.karta .projekty span{
+	text-align:center;
+	width:240px;
+	font-size:60px;
+	font-family:'Anton', sans-serif, 'Roboto Slab', serif;
+}
+
+.karta:hover .projekty{
+	height:300px;
+	transition:1s;
+}
+.karta .projekty input[type=button]{
+	height:80px;
+	width:230px;
+}
+/*-------------responsywnosc------------------------------*/
+@media screen and (max-width: 767px) {
+.cialko{
+	height:150vh;
+}
+.karta{
+	margin-bottom:100px;
+	margin-left:10px;
+	margin-right:10px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+.cialko{
+	flex-direction: column;
+}
+.karta{
+	margin-top:70px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

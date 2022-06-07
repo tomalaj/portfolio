@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kontakt</title>
+	
+	<link rel="stylesheet" href="css/mobilne.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div class="glowny">
+		<div class="panel_boczny aktywny">
+			<div class="guzik">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="linki">
+				<div id="portfolio">Portfolio</div>
+				<a href="glowna.html"><i class="fa fa-home"></i> Menu</a>
+				<a href="omnie.html"><i class="fa fa-briefcase"></i> O mnie</a>
+				<a href="projekty.html"><i class="fa fa-list-alt"></i> Projekty</a>
+				<a href="kontakt.html"><i class="fa fa-mobile-phone"></i> Kontakt</a>
+			</div>
+		</div>
+		
+		
+		<div class="czesc_wlasciwa4">
+			<div class="kontakt">
+				<div class="kontakt_tytul">
+				<h1>Kontakt</h1>
+				</div>
+				<div class="znaczki">
+				<div>
+					<i class="fa fa-mobile-phone"></i>
+					<p> 123 123 321 </p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p> kubatomala@falszywe.pl </p>
+				</div>
+				<div>
+				<i class="fa fa-facebook-official"></i>
+					<p> Facebook </p>
+				</div>
+				</div>
+				<div class="wpisywanie">
+				
+				
+					<form action="" method="post">
+						<h1>Wyślij do mnie maila</h1>
+						<input type="text" placeholder="Podaj imię" required>
+						<input id="tytul_mail" type="text" placeholder="Tytuł maila" required>
+						<input id="mail" type="text" placeholder="Podaj mail" required>
+						<textarea id="tekst" name="trescMail" placeholder="Wpisz treść (ta formatka nie przenosi informacji do klienta pocztowego. Jest w celu pokazania umiejętności pisania reguł w js. Mail nie zostanie wysłany!)" required></textarea>
+					<input type="submit" value="wyślij" onclick="sprawdzMail()">
+					
+					
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="js/java.js"></script>
+</body>
+</html>

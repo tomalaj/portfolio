@@ -1,0 +1,161 @@
+@media screen and (max-width: 767px) {
+*/---------------------główna--------------------*/
+.czesc_wlasciwa{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.tresc{
+	width:100%;
+	float:none;
+	padding-top:30px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.tresc p{
+	font-size:13px;
+	padding-bottom:10px;
+}
+	
+.fotka{
+	height:250px;
+	width:auto;
+	display:flex;
+	justify-content:center;
+	float:none;
+}
+.fotka img{
+	height:250px;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------O mnie-------------------------------*/
+.czesc_wlasciwa1{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.tresc1{
+	width:100%;
+	padding:5px;
+	float:none;
+	height:650px;
+}
+#tytul_omnie{
+	text-align:center;
+	width:100%;
+}
+.tresc1 .informacje li, .tresc1 .informacje2 li{
+	width:90%;
+	padding:8px;
+}
+.informacje3{
+	height:2000px;
+	flex-wrap:wrap;
+}
+.informacje3 .doswiadczenie, .informacje3 .edukacja{
+	height:1300px;
+	width:100%;
+	padding:10px;
+}
+.informacje3 .edukacja{
+	height:500px;
+}
+.informacje3 .edukacja .kartka, .informacje3 .doswiadczenie .kartka{
+	line-height:20px;
+}
+/*---------------------------------------------------------------*/
+/*-------------------------------kontakt-------------------------*/
+.czesc_wlasciwa4{
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+	height:100vh;
+	width:100%;
+}
+.czesc_wlasciwa4 .kontakt{
+	width:90%;
+}
+
+.czesc_wlasciwa4 .kontakt .znaczki{
+	flex-direction:column;
+	height: 40%;
+}
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+/*-----------------------------główna--------------------------------------*/
+.czesc_wlasciwa{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.tresc{
+	width:85%;
+	float:none;
+	padding-top:0px;
+	padding-left:5px;
+	padding-right:5px;
+	order:2;
+	}
+
+.tresc p{
+	font-size:20px;
+	padding-bottom:10px;
+}
+	
+.fotka{
+	height:450px;
+	width:auto;
+	display:flex;
+	justify-content:center;
+	float:none;
+	order:1;
+}
+.fotka img{
+	height:450px;
+}	
+/*-------------------------------------------------------------------------*/
+/*---------------------------o mnie----------------------------------------*/	
+.czesc_wlasciwa1{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.tresc1{
+	width:80%;
+	padding:5px;
+	float:none;
+	height:650px;
+}
+#tytul_omnie{
+	text-align:center;
+	width:100%;
+}
+.tresc1 .informacje li, .tresc1 .informacje2 li{
+	width:50%;
+	padding:8px;
+}
+.informacje3{
+	height:1500px;
+	flex-wrap:wrap;
+}
+.informacje3 .doswiadczenie, .informacje3 .edukacja{
+	height:900px;
+	width:100%;
+	padding:10px;
+}
+.informacje3 .edukacja{
+	height:400px;
+}
+.informacje3 .edukacja .kartka, .informacje3 .doswiadczenie .kartka{
+	line-height:20px;
+}
+/*---------------------------------------------------------------*/
+/*-------------------------------kontakt-------------------------*/
+}

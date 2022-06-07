@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>zegar</title>
+	
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+<div class="przestrzen">
+	<div class="zegar">
+		<span style="--czas:1;"><b>1</b></span>
+		<span style="--czas:2;"><b>2</b></span>
+		<span style="--czas:3;"><b>3</b></span>
+		<span style="--czas:4;"><b>4</b></span>
+		<span style="--czas:5;"><b>5</b></span>
+		<span style="--czas:6;"><b>6</b></span>
+		<span style="--czas:7;"><b>7</b></span>
+		<span style="--czas:8;"><b>8</b></span>
+		<span style="--czas:9;"><b>9</b></span>
+		<span style="--czas:10;"><b>10</b></span>
+		<span style="--czas:11;"><b>11</b></span>
+		<span style="--czas:12;"><b>12</b></span>
+		<div class="wskazowka" id="sekunda" style="--kolor:#d9d9d9;"><i></i></div>
+		<div class="wskazowka minuta" id="minuta" style="--kolor:#284b63;"><i></i></div>
+		<div class="wskazowka godzina" id="godzina" style="--kolor:#fff"><i></i></div>
+	</div>
+</div>	
+
+
+<script>			
+		setInterval(
+		function czas(){
+			let czas = new Date();
+			let sekunda = czas.getSeconds()*6;
+			let minuta = czas.getMinutes()*6;
+			let godzina = czas.getHours()*30 + Math.round(minuta/12);
+			document.getElementById("sekunda").style.transform = "rotate(" + sekunda + "deg)";
+			document.getElementById("minuta").style.transform = "rotate(" + minuta + "deg)";
+			document.getElementById("godzina").style.transform = "rotate(" + godzina + "deg)";
+		},1000);
+		
+	
+</script>
+</body>
+</html>
